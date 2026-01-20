@@ -1,0 +1,43 @@
+---
+whiskers:
+  version: ^2.5.1
+  matrix:
+    - flavor
+    - accent
+  filename: 'themes/evergarden-{{flavor.identifier}}-{{accent}}.ini'
+---
+{% set accent = flavor.colors[accent] -%}
+[colors]
+cursor={{crust.hex}} {{accent.hex}}
+foreground={{text.hex}}
+background={{base.hex}}
+
+regular0={{surface1.hex}}
+regular1={{red.hex}}
+regular2={{green.hex}}
+regular3={{yellow.hex}}
+regular4={{blue.hex}}
+regular5={{pink.hex}}
+regular6={{skye.hex}}
+regular7={{subtext1.hex}}
+
+bright0={{surface2.hex}}
+bright1={{red.hex}}
+bright2={{green.hex}}
+bright3={{yellow.hex}}
+bright4={{blue.hex}}
+bright5={{pink.hex}}
+bright6={{skye.hex}}
+bright7={{subtext0.hex}}
+
+16={{orange.hex}}
+17={{cherry.hex}}
+
+selection-foreground={{text.hex}}
+selection-background={{surface1.hex}}
+
+search-box-no-match={{crust.hex}} {{red.hex}}
+search-box-match={{text.hex}} {{surface0.hex}}
+
+jump-labels={{crust.hex}} {{orange.hex}}
+urls={{blue.hex}}
