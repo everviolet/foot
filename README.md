@@ -40,7 +40,7 @@
 
 ### Usage
 
-Copy contents of your preferred flavor & accent color from <themes> into your Foot configuration file.
+Copy contents of your preferred flavor & accent color from `themes/` into your Foot configuration file.
 
 ### Thanks to <3
 
