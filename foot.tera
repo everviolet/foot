@@ -7,7 +7,7 @@ whiskers:
   filename: 'themes/evergarden-{{flavor.identifier}}-{{accent}}.ini'
 ---
 {% set accent = flavor.colors[accent] -%}
-[colors]
+[colors-dark]
 cursor={{crust.hex}} {{accent.hex}}
 foreground={{text.hex}}
 background={{base.hex}}
